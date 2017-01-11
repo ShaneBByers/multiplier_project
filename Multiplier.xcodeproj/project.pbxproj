@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		432212C21E266AF5002ABDF1 /* multiplier_icon_144.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212B91E266AF5002ABDF1 /* multiplier_icon_144.png */; };
+		432212C31E266AF5002ABDF1 /* multiplier_icon_152.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212BA1E266AF5002ABDF1 /* multiplier_icon_152.png */; };
+		432212C41E266AF5002ABDF1 /* multiplier_icon_76.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212BB1E266AF5002ABDF1 /* multiplier_icon_76.png */; };
+		432212C51E266AF5002ABDF1 /* multiplier_icon_114.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212BC1E266AF5002ABDF1 /* multiplier_icon_114.png */; };
+		432212C61E266AF5002ABDF1 /* multiplier_icon_120.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212BD1E266AF5002ABDF1 /* multiplier_icon_120.png */; };
+		432212C81E266AF5002ABDF1 /* multiplier_icon_72.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212BF1E266AF5002ABDF1 /* multiplier_icon_72.png */; };
+		432212C91E266AF5002ABDF1 /* multiplier_icon_167.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212C01E266AF5002ABDF1 /* multiplier_icon_167.png */; };
+		432212CA1E266AF5002ABDF1 /* multiplier_icon_180.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212C11E266AF5002ABDF1 /* multiplier_icon_180.png */; };
+		432212CD1E266B58002ABDF1 /* multiplier_icon_57.png in Resources */ = {isa = PBXBuildFile; fileRef = 432212CC1E266B58002ABDF1 /* multiplier_icon_57.png */; };
 		4323B8251D779256007055DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323B8241D779256007055DE /* AppDelegate.swift */; };
 		4323B8271D779256007055DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4323B8261D779256007055DE /* ViewController.swift */; };
 		4323B82A1D779256007055DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4323B8281D779256007055DE /* Main.storyboard */; };
@@ -26,6 +35,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		432212B91E266AF5002ABDF1 /* multiplier_icon_144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_144.png; sourceTree = "<group>"; };
+		432212BA1E266AF5002ABDF1 /* multiplier_icon_152.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_152.png; sourceTree = "<group>"; };
+		432212BB1E266AF5002ABDF1 /* multiplier_icon_76.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_76.png; sourceTree = "<group>"; };
+		432212BC1E266AF5002ABDF1 /* multiplier_icon_114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_114.png; sourceTree = "<group>"; };
+		432212BD1E266AF5002ABDF1 /* multiplier_icon_120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_120.png; sourceTree = "<group>"; };
+		432212BF1E266AF5002ABDF1 /* multiplier_icon_72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_72.png; sourceTree = "<group>"; };
+		432212C01E266AF5002ABDF1 /* multiplier_icon_167.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_167.png; sourceTree = "<group>"; };
+		432212C11E266AF5002ABDF1 /* multiplier_icon_180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_180.png; sourceTree = "<group>"; };
+		432212CC1E266B58002ABDF1 /* multiplier_icon_57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = multiplier_icon_57.png; sourceTree = "<group>"; };
 		4323B8211D779256007055DE /* Multiplier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Multiplier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4323B8241D779256007055DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4323B8261D779256007055DE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +74,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		432212CB1E266AFD002ABDF1 /* App Icons */ = {
+			isa = PBXGroup;
+			children = (
+				432212CC1E266B58002ABDF1 /* multiplier_icon_57.png */,
+				432212BF1E266AF5002ABDF1 /* multiplier_icon_72.png */,
+				432212BB1E266AF5002ABDF1 /* multiplier_icon_76.png */,
+				432212BC1E266AF5002ABDF1 /* multiplier_icon_114.png */,
+				432212BD1E266AF5002ABDF1 /* multiplier_icon_120.png */,
+				432212B91E266AF5002ABDF1 /* multiplier_icon_144.png */,
+				432212BA1E266AF5002ABDF1 /* multiplier_icon_152.png */,
+				432212C01E266AF5002ABDF1 /* multiplier_icon_167.png */,
+				432212C11E266AF5002ABDF1 /* multiplier_icon_180.png */,
+			);
+			name = "App Icons";
+			sourceTree = "<group>";
+		};
 		4323B8181D779256007055DE = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +115,7 @@
 				4323B8261D779256007055DE /* ViewController.swift */,
 				4323B8281D779256007055DE /* Main.storyboard */,
 				4323B82B1D779256007055DE /* Assets.xcassets */,
+				432212CB1E266AFD002ABDF1 /* App Icons */,
 				4323B82D1D779256007055DE /* LaunchScreen.storyboard */,
 				4323B8301D779256007055DE /* Info.plist */,
 			);
@@ -141,14 +176,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Shane Byers";
 				TargetAttributes = {
 					4323B8201D779256007055DE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 					};
 					4323B8341D779256007055DE = {
 						CreatedOnToolsVersion = 7.3.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 4323B8201D779256007055DE;
 					};
 				};
@@ -177,8 +214,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				432212C41E266AF5002ABDF1 /* multiplier_icon_76.png in Resources */,
+				432212C91E266AF5002ABDF1 /* multiplier_icon_167.png in Resources */,
 				4323B82F1D779256007055DE /* LaunchScreen.storyboard in Resources */,
+				432212C21E266AF5002ABDF1 /* multiplier_icon_144.png in Resources */,
+				432212CA1E266AF5002ABDF1 /* multiplier_icon_180.png in Resources */,
+				432212C61E266AF5002ABDF1 /* multiplier_icon_120.png in Resources */,
 				4323B82C1D779256007055DE /* Assets.xcassets in Resources */,
+				432212CD1E266B58002ABDF1 /* multiplier_icon_57.png in Resources */,
+				432212C31E266AF5002ABDF1 /* multiplier_icon_152.png in Resources */,
+				432212C51E266AF5002ABDF1 /* multiplier_icon_114.png in Resources */,
+				432212C81E266AF5002ABDF1 /* multiplier_icon_72.png in Resources */,
 				4323B82A1D779256007055DE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,8 +300,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -299,8 +347,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -319,6 +369,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -334,6 +385,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.cse.sbb5159.Multiplier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -349,6 +401,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.cse.sbb5159.Multiplier;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -361,6 +414,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.cse.sbb5159.MultiplierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplier.app/Multiplier";
 			};
 			name = Debug;
@@ -373,6 +427,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = edu.psu.cse.sbb5159.MultiplierTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Multiplier.app/Multiplier";
 			};
 			name = Release;

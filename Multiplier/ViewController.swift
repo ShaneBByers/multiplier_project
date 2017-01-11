@@ -61,7 +61,7 @@ class ViewController: UIViewController {
         for _ in 1...guessButtons.numberOfSegments - 1 {
             tempRand = Int(arc4random_uniform(UInt32(maxGuessDistance * 2))) - 5
             
-            while guesses.indexOf(correctAnswer + tempRand) != nil ||
+            while guesses.index(of: correctAnswer + tempRand) != nil ||
                     tempRand == 0 ||
                     (exerciseChoice != .Subtracter
                             && correctAnswer + tempRand < 0) {
@@ -77,9 +77,9 @@ class ViewController: UIViewController {
         for i in 0...guessButtons.numberOfSegments - 1 {
             
             if i == correctAnswerPosition {
-                guessButtons.setTitle(String(correctAnswer), forSegmentAtIndex: i)
+                guessButtons.setTitle(String(correctAnswer), forSegmentAt: i)
             } else {
-                guessButtons.setTitle(String(guesses.popLast()!), forSegmentAtIndex: i)
+                guessButtons.setTitle(String(guesses.popLast()!), forSegmentAt: i)
             }
             
         }
@@ -100,9 +100,9 @@ class ViewController: UIViewController {
     
     
     
-    @IBAction func exerciseChoiceButtonPressed(sender: UISegmentedControl) {
+    @IBAction func exerciseChoiceButtonPressed(_ sender: UISegmentedControl) {
         
-        let _arithmeticChoice = sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)!
+        let _arithmeticChoice = sender.titleForSegment(at: sender.selectedSegmentIndex)!
         
         exerciseChoice = arithmeticChoice(rawValue: _arithmeticChoice)!
         
@@ -112,52 +112,52 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func guessButtonPressed(sender: UISegmentedControl) {
+    @IBAction func guessButtonPressed(_ sender: UISegmentedControl) {
         
-        nextButton.hidden = false
+        nextButton.isHidden = false
         
-        if sender.titleForSegmentAtIndex(sender.selectedSegmentIndex)! == String(correctAnswer) {
-            correctLabel.hidden = false
+        if sender.titleForSegment(at: sender.selectedSegmentIndex)! == String(correctAnswer) {
+            correctLabel.isHidden = false
             correctLabel.text = "Correct!"
             correctNumberOfQuestions += 1
         } else {
-            correctLabel.hidden = false
+            correctLabel.isHidden = false
             correctLabel.text = "Incorrect!"
         }
         
         currentNumberOfQuestions += 1
         
-        guessButtons.enabled = false
+        guessButtons.isEnabled = false
         
         answerLabel.text = String(correctAnswer)
         questionCounterLabel.text = String(correctNumberOfQuestions) + "/" + String(currentNumberOfQuestions) + " Questions Correct"
         
         if currentNumberOfQuestions == totalNumberOfQuestions {
-            nextButton.setTitle("Reset", forState: UIControlState.Normal)
+            nextButton.setTitle("Reset", for: UIControlState())
             userHasEnded = true
         }
         
     }
     
 
-    @IBAction func nextButtonPressed(sender: AnyObject) {
+    @IBAction func nextButtonPressed(_ sender: AnyObject) {
         
         if !userHasStarted || !userHasEnded {
             
-            nextButton.setTitle("Next", forState: UIControlState.Normal)
+            nextButton.setTitle("Next", for: UIControlState())
             userHasStarted = true
-            guessButtons.hidden = false
+            guessButtons.isHidden = false
             let firstNumber = Int(arc4random_uniform(UInt32(maxValue)))
             let secondNumber = Int(arc4random_uniform(UInt32(maxValue)))
             firstNumberLabel.text = String(firstNumber)
             secondNumberLabel.text = String(secondNumber)
             
-            exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegmentAtIndex(exerciseChoiceButtons.selectedSegmentIndex)!)!
+            exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegment(at: exerciseChoiceButtons.selectedSegmentIndex)!)!
             
             if exerciseChoice == .Combo {
                 // Assumes "Combo" is the last choice
                 let randomArithmetic = Int(arc4random_uniform(UInt32(exerciseChoiceButtons.numberOfSegments-1)))
-                exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegmentAtIndex(randomArithmetic)!)!
+                exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegment(at: randomArithmetic)!)!
             }
             
             switch exerciseChoice {
@@ -172,24 +172,24 @@ class ViewController: UIViewController {
                     break
             }
             
-            totalNumberOfQuestions = Int(numberOfQuestionsButtons.titleForSegmentAtIndex(numberOfQuestionsButtons.selectedSegmentIndex)!)!
+            totalNumberOfQuestions = Int(numberOfQuestionsButtons.titleForSegment(at: numberOfQuestionsButtons.selectedSegmentIndex)!)!
             
             populateGuesses()
             
             setSignLabel()
             
             guessButtons.selectedSegmentIndex = -1
-            guessButtons.enabled = true
+            guessButtons.isEnabled = true
             
             answerLabel.text = ""
             correctLabel.text = ""
-            exerciseChoiceButtons.hidden = true
-            numberOfQuestionsLabel.hidden = true
-            numberOfQuestionsButtons.hidden = true
-            questionCounterLabel.hidden = false
+            exerciseChoiceButtons.isHidden = true
+            numberOfQuestionsLabel.isHidden = true
+            numberOfQuestionsButtons.isHidden = true
+            questionCounterLabel.isHidden = false
             
             userHasEnded = false
-            nextButton.hidden = true
+            nextButton.isHidden = true
             
         } else if userHasEnded {
             
@@ -198,21 +198,21 @@ class ViewController: UIViewController {
             answerLabel.text = ""
             correctLabel.text = ""
             
-            exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegmentAtIndex(exerciseChoiceButtons.selectedSegmentIndex)!)!
+            exerciseChoice = arithmeticChoice(rawValue: exerciseChoiceButtons.titleForSegment(at: exerciseChoiceButtons.selectedSegmentIndex)!)!
             
             setSignLabel()
             
-            guessButtons.hidden = true
+            guessButtons.isHidden = true
             
             
             questionCounterLabel.text = "0/0 Questions Correct"
-            questionCounterLabel.hidden = true
+            questionCounterLabel.isHidden = true
             
-            exerciseChoiceButtons.hidden = false
-            numberOfQuestionsLabel.hidden = false
-            numberOfQuestionsButtons.hidden = false
+            exerciseChoiceButtons.isHidden = false
+            numberOfQuestionsLabel.isHidden = false
+            numberOfQuestionsButtons.isHidden = false
             
-            nextButton.setTitle("Start", forState: UIControlState.Normal)
+            nextButton.setTitle("Start", for: UIControlState())
             
             correctNumberOfQuestions = 0
             currentNumberOfQuestions = 0
